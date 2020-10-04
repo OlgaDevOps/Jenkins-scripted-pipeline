@@ -71,7 +71,7 @@ node{
             else if (params.terraform_destroy) {
                 stage("Terraform Destroy"){
                     sh """
-                        terraform destroy -var-file ${environment}.tfvars -auto-approve
+                        terraform destroy -var-file ${environmnt}.tfvars -auto-approve
                     """
                 }
             }
